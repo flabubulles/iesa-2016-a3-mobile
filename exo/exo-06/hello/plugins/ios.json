@@ -9,6 +9,9 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "HelloWord"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "HelloWord"
         }
     },
     "dependent_plugins": {}
