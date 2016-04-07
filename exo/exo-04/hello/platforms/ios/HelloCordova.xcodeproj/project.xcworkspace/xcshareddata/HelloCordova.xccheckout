@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>65E6AC91-C71C-488B-A9CC-9B39C92CBC8F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HelloCordova</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>88150E767A838000F5693568B8673431CB9380A5</key>
+		<string>https://github.com/flabubulles/iesa-2016-a3-mobile.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>exo/exo-04/hello/platforms/ios/HelloCordova.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>88150E767A838000F5693568B8673431CB9380A5</key>
+		<string>../../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/flabubulles/iesa-2016-a3-mobile.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>88150E767A838000F5693568B8673431CB9380A5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>88150E767A838000F5693568B8673431CB9380A5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iesa-2016-a3-mobile</string>
+		</dict>
+	</array>
+</dict>
+</plist>
