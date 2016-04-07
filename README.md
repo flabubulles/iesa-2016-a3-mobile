@@ -1,4 +1,4 @@
-# Cours Cordova - ## dossier iesa-2016-a3-mobile
+# Cours Cordova - dossier iesa-2016-a3-mobile
 
 ## ---- COMMANDES GIT ----
 
@@ -7,4 +7,5 @@
 * `git status`              => permet de voir les fichiers modifiés
 * `git add .`               => permet de confirmer les fichiers prêt à être ajoutés
 * `git reset HEAD`          => permet de faire revenir un fichier en modif
-* `git commit -m "message"` => permet de commit le fichier avec légende
+* `git commit -m "message"` => permet de "commit" le fichier avec légende
+* `git push`                => permet de "push" le fichier
