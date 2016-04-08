@@ -1,9 +1,9 @@
-﻿## Commande pour l'installation IOS
+## Commande pour l'installation IOS
 
 1- Installer NODE
-2- sudo intaller cordova : npm install -g cordova
+2- sudo intaller cordova : sudo npm install -g cordova
 3- xcode-select --install
-4 -sudo npm install ios-sim -g
+4- sudo npm install ios-sim -g
 
 5- Créer un repertoire exo dans le repertoire iesa-2016-a3-mobile
 
