@@ -9,3 +9,5 @@
 * `git reset HEAD`          => permet de faire revenir un fichier en modif
 * `git commit -m "message"` => permet de "commit" le fichier avec légende
 * `git push`                => permet de "push" le fichier
+
+## ---- COMMANDE CORDOVA ----

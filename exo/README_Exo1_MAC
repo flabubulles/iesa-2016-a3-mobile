@@ -1,3 +1,28 @@
-/!/ Exercice IOS réalisé sur MAC !!!
+﻿## Commande pour l'installation IOS
 
-## Installation
+1- Installer NODE
+2- sudo intaller cordova : npm install -g cordova
+3- xcode-select --install
+4 -sudo npm install ios-sim -g
+
+5- Créer un repertoire exo dans le repertoire iesa-2016-a3-mobile
+
+6-Taper les commandes :
+$ mkdir exo-01
+$ cd exo-01
+$ cordova help create
+$ cordova create hello fr.graphique-creation.training.cordova "HelloWord"
+$ cd hello
+$ cordova platform
+$ cordova platform add ios -save
+$ cordova platform ls
+$ cordova requirements
+
+7- Taper la commande :
+sudo npm install -g ios-deploy OU sudo npm install -g ios-deploy --unsafe-perm=true
+
+8- Taper la commande:
+$ cordova build
+
+$ cordova emulate ios --save="iPhone (Retina 4-inch)"
+s./platforms/ios/cordova/run
