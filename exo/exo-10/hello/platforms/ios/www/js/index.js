@@ -27,8 +27,8 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-        document.addEventListener("online", this.checkConnection);
-        document.addEventListener("offline", this.checkConnection);
+        //document.addEventListener("online", this.checkConnection);
+        //document.addEventListener("offline", this.checkConnection);
     },
     // deviceready Event Handler
     //
@@ -53,7 +53,7 @@ var app = {
 
 
         // exo7
-        //app.checkConnection();
+        app.checkConnection();
         app.findContacts();
     },
 
@@ -81,19 +81,19 @@ var app = {
 
 
     // exo 07
-    checkConnection: function(){
-        var networksState = navigation.connection.type;
-        
+    checkConnection: function() {
+        var networkState = navigator.connection.type;
         var states = {};
-        states[Connection.UNKNOWN] = 'Unknown connection';
+        states[Connection.UNKNOWN]  = 'Unknown connection';
         states[Connection.ETHERNET] = 'Ethernet connection';
-        states[Connection.WIFI] = 'Wifi connection';
-        states[Connection.CELL_2G] = 'Cell 2G connection';
-        states[Connection.CELL_3G] = 'Cell 3G connection';
-        states[Connection.CELL_4G] = 'Cell 4G connection';
-        states[Connection.CELL] = 'Cell generic connection';
-        states[Connection.NONE] = 'No network connection'; 
+        states[Connection.WIFI]     = 'WiFi connection';
+        states[Connection.CELL_2G]  = 'Cell 2G connection';
+        states[Connection.CELL_3G]  = 'Cell 3G connection';
+        states[Connection.CELL_4G]  = 'Cell 4G connection';
+        states[Connection.CELL]     = 'Cell generic connection';
+        states[Connection.NONE]     = 'No network connection';
 
+        document.getElementById('network').innerHTML = 'Connection types : ' + states[networksState];
     },
 
 
