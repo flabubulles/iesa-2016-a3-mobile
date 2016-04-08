@@ -27,6 +27,8 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener("online", this.checkConnection);
+        document.addEventListener("offline", this.checkConnection);
     },
     // deviceready Event Handler
     //
@@ -59,11 +61,8 @@ var app = {
         states[Connection.CELL] = 'Cell generic connection';
         states[Connection.NONE] = 'No network connection';
 
-        alert('Connection type:' + states[networkState]);
     },
 
-    document.addEventListener("online", this.checkConnection);
-    document.addEventListener("offline", this.checkConnection);
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
