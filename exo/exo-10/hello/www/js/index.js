@@ -51,50 +51,51 @@ var app = {
 
 
         // exo7
-        app.checkConnection();
-
-
+        //app.checkConnection();
+        app.findContacts();
+    },
 
     //exo 10
-    $('#findButton').click(function(){
-        var finder = $('#find').val();
-
-        function onSuccess(contacts){
-            $('name').html(contacts[0].name.givenName+' '+contacts[0].name.familyName);
-        };
-
-        function onError(contactError){
-            alert('onError!');
-        }
-
-        //find all contacts
-        var options = new ContactFindOptions();
-        options.filter = finder;
-        var filteredFields =["displayName", "name"];
-        navigator.contacts.find(filteredFields, onSuccess, onError, options);
-
-    });
-
-},
-
-    //exo 07
-    checkConnection: function(){
-        var networksState = navigation.connection.type;
-        
-        var states = {};
-        states[Connection.UNKNOWN] = 'Unknown connection';
-        states[Connection.ETHERNET] = 'Ethernet connection';
-        states[Connection.WIFI] = 'Wifi connection';
-        states[Connection.CELL_2G] = 'Cell 2G connection';
-        states[Connection.CELL_3G] = 'Cell 3G connection';
-        states[Connection.CELL_4G] = 'Cell 4G connection';
-        states[Connection.CELL] = 'Cell generic connection';
-        states[Connection.NONE] = 'No network connection';
-
-        //alert('Connection type:' + states[networkState]);
-        document.getElementById('timestamp').innerHTML = 'Connection type:' + states[networkState];
-
+    findContacts: function() {
+        $('#findButton').click(function(){
+            var finder = $('#find').val();
+            // document.getElementById('email').innerHTML = finder; // new Date();
+ 
+            function onSuccess(contacts){
+                $('#name').html(contacts[0].name.givenName + ' ' + contacts[0].name.familyName);
+            };
+ 
+            function onError(contactError){
+                alert('onError!');
+            };
+ 
+            //find all contacts
+            var options = new ContactFindOptions();
+            options.filter = finder;
+            var fields = ["displayName", "name"];
+            navigator.contacts.find(fields, onSuccess, onError, options);
+        });
     },
+
+
+    // //exo 07
+    // checkConnection: function(){
+    //     var networksState = navigation.connection.type;
+        
+    //     var states = {};
+    //     states[Connection.UNKNOWN] = 'Unknown connection';
+    //     states[Connection.ETHERNET] = 'Ethernet connection';
+    //     states[Connection.WIFI] = 'Wifi connection';
+    //     states[Connection.CELL_2G] = 'Cell 2G connection';
+    //     states[Connection.CELL_3G] = 'Cell 3G connection';
+    //     states[Connection.CELL_4G] = 'Cell 4G connection';
+    //     states[Connection.CELL] = 'Cell generic connection';
+    //     states[Connection.NONE] = 'No network connection';
+
+    //     //alert('Connection type:' + states[networkState]);
+    //     document.getElementById('timestamp').innerHTML = 'Connection type:' + states[networkState];
+
+    // },
 
 
 

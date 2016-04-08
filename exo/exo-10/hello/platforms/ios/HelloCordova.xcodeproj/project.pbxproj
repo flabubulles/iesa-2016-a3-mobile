@@ -20,6 +20,10 @@
 		77BE8F2BB73B4610A9BDB097 /* CDVReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FABCCEE60C040DDA2FA44E5 /* CDVReachability.m */; };
 		FDE2A8A951784A0E81038AB1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A71F001F35C4FC2ADE885C2 /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B5C5C5C668424C2E839985CA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883C977FCD134AD59E9EBDDF /* CoreTelephony.framework */; };
+		D05D9BAC1C754878912DED20 /* CDVContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D8005D8ED24F31A55DD7BF /* CDVContacts.m */; };
+		CC6E46773D1944178649A2C5 /* CDVContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 718CC84E38CC4D0EAD50E646 /* CDVContact.m */; };
+		23FCFC6CB4FA4FAE818C1A2A /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A8D21AB75B4A2D9F7ED5EA /* AddressBook.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		13CEA4249CE947DE91774314 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A767BD39FF3C4A9AA483F3A9 /* AddressBookUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,12 @@
 		EB9ECC4A734E4DFBB05E5DF8 /* CDVReachability.h */ = {isa = PBXFileReference; name = "CDVReachability.h"; path = "cordova-plugin-network-information/CDVReachability.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		2A71F001F35C4FC2ADE885C2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		883C977FCD134AD59E9EBDDF /* CoreTelephony.framework */ = {isa = PBXFileReference; name = "CoreTelephony.framework"; path = "System/Library/Frameworks/CoreTelephony.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		04D8005D8ED24F31A55DD7BF /* CDVContacts.m */ = {isa = PBXFileReference; name = "CDVContacts.m"; path = "cordova-plugin-contacts/CDVContacts.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		718CC84E38CC4D0EAD50E646 /* CDVContact.m */ = {isa = PBXFileReference; name = "CDVContact.m"; path = "cordova-plugin-contacts/CDVContact.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		A379C77281F24D9A95ED710D /* CDVContacts.h */ = {isa = PBXFileReference; name = "CDVContacts.h"; path = "cordova-plugin-contacts/CDVContacts.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1F60C3EA94D04EE98E5BA5A9 /* CDVContact.h */ = {isa = PBXFileReference; name = "CDVContact.h"; path = "cordova-plugin-contacts/CDVContact.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C6A8D21AB75B4A2D9F7ED5EA /* AddressBook.framework */ = {isa = PBXFileReference; name = "AddressBook.framework"; path = "System/Library/Frameworks/AddressBook.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		A767BD39FF3C4A9AA483F3A9 /* AddressBookUI.framework */ = {isa = PBXFileReference; name = "AddressBookUI.framework"; path = "System/Library/Frameworks/AddressBookUI.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,8 @@
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				FDE2A8A951784A0E81038AB1 /* SystemConfiguration.framework in Frameworks */,
 				B5C5C5C668424C2E839985CA /* CoreTelephony.framework in Frameworks */,
+				23FCFC6CB4FA4FAE818C1A2A /* AddressBook.framework in Frameworks */,
+				13CEA4249CE947DE91774314 /* AddressBookUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +160,8 @@
 			children = (
 				2A71F001F35C4FC2ADE885C2 /* SystemConfiguration.framework */,
 				883C977FCD134AD59E9EBDDF /* CoreTelephony.framework */,
+				C6A8D21AB75B4A2D9F7ED5EA /* AddressBook.framework */,
+				A767BD39FF3C4A9AA483F3A9 /* AddressBookUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -179,6 +193,10 @@
 				2FABCCEE60C040DDA2FA44E5 /* CDVReachability.m */,
 				CED75B8F46B84A02A795EDD6 /* CDVConnection.h */,
 				EB9ECC4A734E4DFBB05E5DF8 /* CDVReachability.h */,
+				04D8005D8ED24F31A55DD7BF /* CDVContacts.m */,
+				718CC84E38CC4D0EAD50E646 /* CDVContact.m */,
+				A379C77281F24D9A95ED710D /* CDVContacts.h */,
+				1F60C3EA94D04EE98E5BA5A9 /* CDVContact.h */,
 			);
 			name = Plugins;
 			path = "HelloCordova/Plugins";
@@ -296,6 +314,8 @@
 				73EE36A994E24494BD3C4D3C /* CDVDevice.m in Sources */,
 				4EB30F9FE1904032B1DC930A /* CDVConnection.m in Sources */,
 				77BE8F2BB73B4610A9BDB097 /* CDVReachability.m in Sources */,
+				D05D9BAC1C754878912DED20 /* CDVContacts.m in Sources */,
+				CC6E46773D1944178649A2C5 /* CDVContact.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
